@@ -42,3 +42,14 @@ function About(props) {
     </section>
   `
 }
+// Skills Component
+function Skills(props) {
+  return `
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        ${props.skills.map((skill) => `<li>${skill}</li>`).join('')}
+      </ul>
+    </section>
+  `
+}
