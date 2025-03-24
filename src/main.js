@@ -53,3 +53,53 @@ function Skills(props) {
     </section>
   `
 }
+// Content Component
+function Content(props) {
+  const gamesList = props.games
+    .map(
+      (game) => `
+      <article class="game-card">
+        <h3>${game.title}</h3>
+        <img src="${game.imageUrl}" alt="${game.title} cover image">
+        <p><strong>Genre:</strong> ${game.genre}</p>
+        <p>${game.description}</p>
+      </article>
+    `,
+    )
+    .join('')
+  //gross table
+  const gamesTable = `
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${props.games
+        .map(
+          (game) => `
+          <tr>
+            <td>${game.title}</td>
+            <td>${game.genre}</td>
+          </tr>
+        `,
+        )
+        .join('')}
+    </tbody>
+  </table>
+`
+
+  return `
+    <section id="favorite-games">
+      <h2>My Favorite Games</h2>
+      <div class="games-container">
+        ${gamesList}
+      </div>
+      <hr />
+      <h3>Games Summary</h3>
+      ${gamesTable}
+    </section>
+  `
+}
