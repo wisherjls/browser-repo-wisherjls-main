@@ -23,3 +23,13 @@ const personalInfo = {
   ],
   year: 2099,
 }
+
+// Header Component
+function Header(props) {
+  return `
+    <header>
+      <h1>${props.name}</h1>
+      <h2>${props.title}</h2>
+    </header>
+  `
+}
