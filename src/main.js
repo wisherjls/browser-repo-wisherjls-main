@@ -103,3 +103,19 @@ function Content(props) {
     </section>
   `
 }
+// Footer Component
+function Footer(props) {
+  return `
+    <footer>
+      <p>© ${props.year} ${props.name}. All rights reserved.</p>
+      <hr />
+      <form id="contact-form">
+        <h3>Contact Me</h3>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Your email" />
+        <button type="submit">Submit</button>
+      </form>
+      <p>Visit my <a href="https://example.com" target="_blank">Portfolio</a></p>
+    </footer>
+  `
+}
