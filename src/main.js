@@ -23,6 +23,18 @@ const personalInfo = {
   ],
   year: 2099,
 }
+// Main App component
+function App() {
+  return `
+    <main id="personal-website">
+      ${Header({ name: personalInfo.name, title: personalInfo.title })}
+      ${About({ text: personalInfo.about })}
+      ${Skills({ skills: personalInfo.skills })}
+      ${Content({ games: personalInfo.games })}
+      ${Footer({ name: personalInfo.name, year: personalInfo.year })}
+    </main>
+  `
+}
 
 // Header Component
 function Header(props) {
@@ -33,6 +45,7 @@ function Header(props) {
     </header>
   `
 }
+
 // About Component
 function About(props) {
   return `
@@ -42,6 +55,7 @@ function About(props) {
     </section>
   `
 }
+
 // Skills Component
 function Skills(props) {
   return `
@@ -53,6 +67,7 @@ function Skills(props) {
     </section>
   `
 }
+
 // Content Component
 function Content(props) {
   const gamesList = props.games
@@ -67,6 +82,7 @@ function Content(props) {
     `,
     )
     .join('')
+
   //gross table
   const gamesTable = `
   <table border="1" cellpadding="5" cellspacing="0">
@@ -103,6 +119,7 @@ function Content(props) {
     </section>
   `
 }
+
 // Footer Component
 function Footer(props) {
   return `
@@ -119,3 +136,6 @@ function Footer(props) {
     </footer>
   `
 }
+
+document.getElementById('app').innerHTML = App()
+console.log('IT WORKS!')
