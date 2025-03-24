@@ -132,7 +132,7 @@ function Footer(props) {
         <input type="email" id="email" placeholder="Your email" />
         <button type="submit">Submit</button>
       </form>
-      <p>Visit my <a href="https://example.com" target="_blank">Portfolio</a></p>
+      <p>Visit my <a href="https://github.com/wisherjls/browser-repo-wisherjls-main" target="_blank">repo</a></p>
     </footer>
   `
 }
