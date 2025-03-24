@@ -33,3 +33,12 @@ function Header(props) {
     </header>
   `
 }
+// About Component
+function About(props) {
+  return `
+    <section id="about">
+      <h2>About Me</h2>
+      <p>${props.text}</p>
+    </section>
+  `
+}
