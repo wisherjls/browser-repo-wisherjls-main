@@ -1,0 +1,9 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black; /* Black background */
+  color: rgb(165, 1, 1); /* Red text */
+}

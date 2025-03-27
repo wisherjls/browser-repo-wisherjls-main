@@ -1,3 +1,5 @@
+import './styles.css'
+
 // Personal data to pass to components
 const personalInfo = {
   name: 'Your Name',
