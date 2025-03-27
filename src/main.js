@@ -115,7 +115,6 @@ function Content(props) {
       <div class="games-container">
         ${gamesList}
       </div>
-      <hr />
       <h3>Games Summary</h3>
       ${gamesTable}
     </section>
@@ -127,7 +126,6 @@ function Footer(props) {
   return `
     <footer>
       <p>© ${props.year} ${props.name}. All rights reserved.</p>
-      <hr />
       <form id="contact-form">
         <h3>Contact Me</h3>
         <label for="email">Email:</label>

@@ -6,4 +6,31 @@ body {
   box-sizing: border-box;
   background-color: black; /* Black background */
   color: rgb(165, 1, 1); /* Red text */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-direction: column; /* Allows stacking of elements if needed */
+  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+}
+
+ul {
+  list-style-position: inside; /* Ensures bullets stay inside the text area */
+  text-align: center; /* Centers the text and bullets */
+  padding: 0; /* Removes default padding */
+}
+
+li {
+  margin: 0.5rem 0; /* Adds spacing between list items */
+}
+
+table {
+  margin: auto; /* Centers the table horizontally */
+  text-align: center; /* Centers text inside the table */
+}
+
+.header {
+  text-align: center;
+
+  padding: 2rem;
 }
