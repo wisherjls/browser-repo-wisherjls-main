@@ -12,6 +12,19 @@ body {
   align-items: center; /* Centers vertically */
   flex-direction: column; /* Allows stacking of elements if needed */
   min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+input[type='email'],
+button[type='submit'] {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border: 2px solid rgb(165, 1, 1);
+  background-color: black;
+  color: rgb(165, 1, 1);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 ul {
@@ -27,10 +40,70 @@ li {
 table {
   margin: auto; /* Centers the table horizontally */
   text-align: center; /* Centers text inside the table */
+  border: rgb(165, 1, 1);
 }
 
-.header {
-  text-align: center;
+@media (max-width: 600px) {
+  body {
+    font-size: 10pt; /* Smaller text for mobile devices */
+    background-color: #222; /* Slightly darker background */
+  }
 
-  padding: 2rem;
+  ul {
+    font-size: 10pt; /* Adjust font size for mobile */
+  }
+
+  li {
+    margin: 0.3rem 0; /* Reduced margin for smaller screens */
+  }
+
+  table {
+    width: 100%; /* Ensure table fits the screen */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 11pt; /* Slightly larger font for tablets */
+  }
+
+  ul {
+    font-size: 11pt;
+  }
+
+  li {
+    margin: 0.4rem 0; /* Adjusted margin for tablet */
+  }
+
+  table {
+    width: 80%; /* Slightly reduced table width for tablets */
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 12pt; /* Default font size for larger screens */
+  }
+
+  ul {
+    font-size: 12pt;
+  }
+
+  li {
+    margin: 0.5rem 0; /* Standard margin for desktop */
+  }
+
+  table {
+    width: 60%; /* Reduced table width for desktop */
+  }
+}
+
+/* Animation for everything */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

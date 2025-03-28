@@ -2,7 +2,7 @@ import './styles.css'
 
 // Personal data to pass to components
 const personalInfo = {
-  name: 'Your Name',
+  name: 'Jonathan Sayers',
   title: 'Web Developer & Game Enthusiast',
   about:
     'A passionate developer who loves creating interactive applications and exploring new technologies.',
