@@ -115,7 +115,6 @@ h1,
 h2,
 h3,
 p,
-ul,
 li,
 table,
 td,
@@ -132,7 +131,6 @@ h1:hover,
 h2:hover,
 h3:hover,
 p:hover,
-ul:hover,
 li:hover {
   transform: scale(1.1); /* Slightly enlarge elements on hover */
   transition: all 0.3s ease; /* Smooth transition for the hover effect */
